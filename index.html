@@ -1,115 +1,253 @@
 <!doctype html>
-<head lang="es">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>360 Justicia</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    crossorigin="anonymous"
-  />
-</head>
-<header>
-  <header class="d-flex justify-content-between align-items-center p-3">
-    <nav class="navbar navbar-light bg-light px-3">
-      <!--<span class="navbar-brand mb-0 h1">360Justicia</span>-->
-      <img
-        src="https://thmrudolf.github.io/360justicia/img/logo_clarito.jpeg"
-        alt="Logo de 360Justicia"
-        style="height: 96px; width: auto"
-      />
-    </nav>
-  </header>
-  <!-- MENU (Bootstrap Navbar) -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">360Justicia</a>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>360Justicia</title>
 
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse" data-bs-target="#mainNav"
-            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto">
-        <!-- same page (anchors) -->
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#quienes-somos">Quiénes somos</a>
-        </li>
+  </head>
 
+  <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="100" tabindex="0">
+    <div class="container">
+      <!-- Top bar: brand + logo -->
+      <header class="d-flex justify-content-between align-items-center py-3">
+        <a
+          class="navbar-brand fs-1 fw-semibold text-decoration-none"
+          href="index.html"
+          >360Justicia</a
+        >
+        <img
+          src="https://thmrudolf.github.io/360justicia/img/logo_clarito.jpeg"
+          alt="Logo de 360Justicia"
+          style="height: 96px; width: auto"
+        />
+      </header>
 
-        <!-- same page (anchors) -->
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#contacto">Contacto</a>
-        </li>
-        
-        <!-- other pages -->
-        <li class="nav-item">
-          <a class="nav-link" href="servicios.html">Servicios</a>
-        </li>
+      <!-- Menu -->
+<nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4 px-3">
+  <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <img 
+    src="https://thmrudolf.github.io/360justicia/img/logo_clarito.jpeg" 
+    alt="Logo" 
+    style="height:40px; width:auto;">
+    <span class="fw-semibold">360Justicia</span>
+  </a>
 
-        <!-- other pages -->
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-      </ul>
+  <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#quienes-somos"
+                  >Quiénes somos</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contacto">Contacto</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="services/servicios.html">Servicios</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <main>
+        <section id="quienes-somos" class="py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+              <h2>Quiénes somos</h2>
+              <h3>What is Lorem Ipsum?</h3>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+
+              <h3>Why do we use it?</h3>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacto" class="py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+              <h2 class="mb-3">Contacto</h2>
+              <p class="text-muted mb-4">
+                Escríbenos y te respondemos lo antes posible.
+              </p>
+
+              <!-- Alerts -->
+              <div id="formOk" class="alert alert-success d-none" role="alert">
+                ¡Gracias! Tu mensaje fue enviado.
+              </div>
+              <div id="formErr" class="alert alert-danger d-none" role="alert">
+                Ups. No se pudo enviar. Intenta de nuevo.
+              </div>
+
+              <!-- Formspree: replace XXXXXXXX -->
+              <form
+                id="contactForm"
+                class="needs-validation"
+                novalidate
+                action="https://formspree.io/f/mvzbnbpo"
+                method="POST"
+              >
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre y apellido"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor escribe tu nombre completo.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor escribe un email válido.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label"
+                    >Breve descripción</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="descripcion"
+                    name="descripcion"
+                    rows="4"
+                    placeholder="¿En qué te podemos ayudar?"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Por favor escribe una breve descripción.
+                  </div>
+                </div>
+
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nuevo mensaje desde 360Justicia"
+                />
+
+                <button id="sendBtn" type="submit" class="btn btn-primary">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-  </div>
-</nav>
-  <!-- Example sections so the menu links work -->
-  <section id="quienes-somos" class="py-5"><h2>Quienes somos</h2></section>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
 
-  <section id="servisios" class="py-5"><h2>Servisios</h2></section>
-    <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  
-  <section id="contacto" class="py-5"><h2>Contacto</h2></section>
-    <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  
-  <section id="blogg" class="py-5"><h2>Blog</h2></section>
-
-      <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-  <p>asdfasdfasdfasdfadsfasdfasdfa</p>
-</div>
-  <body>
-    <!--<h1>Quienes somos</h1> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const form = document.getElementById("contactForm");
+        const ok = document.getElementById("formOk");
+        const err = document.getElementById("formErr");
+        const btn = document.getElementById("sendBtn");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          ok.classList.add("d-none");
+          err.classList.add("d-none");
+
+          // Bootstrap validation UI
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add("was-validated");
+            return;
+          }
+
+          // Send to Formspree without leaving the page
+          btn.disabled = true;
+
+          try {
+            const resp = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { Accept: "application/json" },
+            });
+
+            if (resp.ok) {
+              ok.classList.remove("d-none");
+              form.reset();
+              form.classList.remove("was-validated");
+            } else {
+              err.classList.remove("d-none");
+              const data = await resp.json().catch(() => null);
+              console.log("Formspree error:", resp.status, data);
+            }
+          } catch (e) {
+            err.classList.remove("d-none");
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      })();
+    </script>
   </body>
-</header>
+</html>
