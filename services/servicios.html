@@ -1,52 +1,160 @@
+
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Servicios - 360 Justicia</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
+
   </head>
-  <body>
+
+  <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="100" tabindex="0">
     <div class="container">
-      <h1 class="mt-4">Nuestros Servicios</h1>
-      <p>
-        En 360 Justicia ofrecemos una amplia gama de servicios legales para
-        satisfacer las necesidades de nuestros clientes. Nuestros servicios
-        incluyen:
-      </p>
+      <!-- Top bar: brand + logo -->
+      <header class="d-flex justify-content-between align-items-center py-3">
+        <a
+          class="navbar-brand fs-1 fw-semibold text-decoration-none"
+          href="index.html"
+          >360Justicia</a
+        >
+        <img
+          src="https://thmrudolf.github.io/360justicia/img/logo_clarito.jpeg"
+          alt="Logo de 360Justicia"
+          style="height: 96px; width: auto"
+        />
+      </header>
 
-      <ul>
-        <li>
-          <strong>Asesoría Legal:</strong> Brindamos asesoramiento experto en
-          diversas áreas del derecho, incluyendo derecho civil, penal, laboral y
-          más.
-        </li>
-        <li>
-          <strong>Representación Legal:</strong> Representamos a nuestros
-          clientes en procedimientos judiciales y administrativos para proteger
-          sus derechos e intereses.
-        </li>
-        <li>
-          <strong>Consultoría Jurídica:</strong> Ofrecemos consultoría
-          personalizada para empresas y particulares, ayudándoles a tomar
-          decisiones informadas.
-        </li>
-        <li>
-          <strong>Resolución de Conflictos:</strong> Facilitamos la mediación y
-          el arbitraje para resolver disputas de manera eficiente y efectiva.
-        </li>
-      </ul>
+      <!-- Menu -->
+<nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4 px-3">
+  <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+    <img 
+    src="https://thmrudolf.github.io/360justicia/img/logo_clarito.jpeg" 
+    alt="Logo" 
+    style="height:40px; width:auto;">
+    <span class="fw-semibold">360Justicia</span>
+  </a>
 
-      <p>
-        Si desea obtener más información sobre nuestros servicios o programar
-        una consulta, no dude en contactarnos a través de nuestro formulario de
-        contacto o llamándonos directamente.
-      </p>
+  <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#quienes-somos"
+                  >Quiénes somos</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#contacto">Contacto</a>
+              </li>
+
+              <li class="nav-item active">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Content -->
+<main>
+  <section id="quienes-somos" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros servicios</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a href="services.html#servicio-1" class="text-decoration-none text-dark">
+              <img
+                src="img/servicio-1.jpg"
+                class="card-img-top"
+                alt="Servicio 1"
+              />
+              <div class="card-body">
+                <h3 class="card-title fs-4 mb-2">Servicio 1</h3>
+                <p class="card-text fs-5 mb-0">
+                  Explicación corta del servicio 1 (1–2 líneas).
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a href="services.html#servicio-2" class="text-decoration-none text-dark">
+              <img
+                src="img/servicio-2.jpg"
+                class="card-img-top"
+                alt="Servicio 2"
+              />
+              <div class="card-body">
+                <h3 class="card-title fs-4 mb-2">Servicio 2</h3>
+                <p class="card-text fs-5 mb-0">
+                  Explicación corta del servicio 2 (1–2 líneas).
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a href="services.html#servicio-3" class="text-decoration-none text-dark">
+              <img
+                src="img/servicio-3.jpg"
+                class="card-img-top"
+                alt="Servicio 3"
+              />
+              <div class="card-body">
+                <h3 class="card-title fs-4 mb-2">Servicio 3</h3>
+                <p class="card-text fs-5 mb-0">
+                  Explicación corta del servicio 3 (1–2 líneas).
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <a href="services.html#servicio-4" class="text-decoration-none text-dark">
+              <img
+                src="img/servicio-4.jpg"
+                class="card-img-top"
+                alt="Servicio 4"
+              />
+              <div class="card-body">
+                <h3 class="card-title fs-4 mb-2">Servicio 4</h3>
+                <p class="card-text fs-5 mb-0">
+                  Explicación corta del servicio 4 (1–2 líneas).
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+  </section>
+</main>
