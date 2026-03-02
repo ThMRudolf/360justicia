@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
   <head>
@@ -14,33 +13,40 @@
     />
   </head>
 
-  <body
-    data-bs-spy="scroll"
-    data-bs-target="#topNav"
-    data-bs-offset="100"
-    tabindex="0"
-  >
+  <body>
     <div class="container">
       <!-- Top bar: brand + logo -->
       <header class="d-flex justify-content-between align-items-center py-3">
         <a
-          class="navbar-brand fs-1 fw-semibold text-decoration-none"
-          href="index.html"></a>
-        <img
-          src="https://thmrudolf.github.io/360justicia/img/360J_Header_Grafito.png"
-          alt="Logo de 360Justicia"
-          style="height: 124px; width: auto"
-        />
+          class="navbar-brand fs-1 fw-semibold text-decoration-none text-dark"
+          href="../index.html"
+          aria-label="Ir a inicio (360Justicia)"
+        >
+        </a>
+
+        <a
+          href="../index.html"
+          class="d-inline-block"
+          aria-label="Ir a inicio (logo)"
+        >
+          <img
+            src="https://thmrudolf.github.io/360justicia/img/360J_Header_Grafito.png"
+            alt="Logo de 360Justicia"
+            style="height: 124px; width: auto"
+          />
+        </a>
       </header>
 
       <!-- Menu -->
       <nav
         id="topNav"
-        class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4 px-3"
+        class="navbar navbar-expand-lg bg-light rounded mb-4 px-3"
+        data-bs-theme="light"
       >
         <a
           class="navbar-brand d-flex align-items-center gap-2"
-          href="../index.html">
+          href="../index.html"
+        >
           <span class="fw-semibold">Litigio Estratégico - 360Justicia</span>
         </a>
 
@@ -59,7 +65,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="../index.html">Home</a>
+              <a class="nav-link" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../QuienesSomos/quienes_somos.html"
@@ -67,7 +73,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../services/Litigio_Estrategico.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../services/Litigio_Estrategico.html"
                 >Litigio Estratégico</a
               >
             </li>
@@ -85,42 +94,58 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="../blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../QuienesSomos/contacto.html">Contacto</a>
+              <a class="nav-link" href="../QuienesSomos/contacto.html"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
       </nav>
 
-<!-- Content -->
-<main>
-  <section id="quienes-somos" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Nuestros servicios</h2>
+      <!-- Content -->
+      <main>
+        <section id="litigio" class="py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <h1 class="mb-4">Litigio Estratégico</h1>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <!-- Card 1 -->
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <a href="services.html#servicio-1" class="text-decoration-none text-dark">
-              <img
-                src="https://thmrudolf.github.io/360justicia/img/place_holder.jpeg"
-                class="card-img-top"
-                alt="Litigio Estratégico"
-              />
-              <div class="card-body">
-                <h3 class="card-title fs-4 mb-2">	Litigio	Estratégico	</h3>
-                <p class="card-text fs-5 mb-0">
-                  El	litigio	se	concibe	como	una	vía	para	combatir	las	desigualdades,	atender	sus	consecuencias	
-y	restituir	el	daño,	así	como	fortalecer	la	justicia	inclusiva	y	establecer	precedentes	
-transformadores.	
-                </p>
+              <div class="card shadow-sm">
+                <a
+                  href="../services/Litigio_Estrategico.html"
+                  class="text-decoration-none text-dark"
+                >
+                  <img
+                    src="https://thmrudolf.github.io/360justicia/img/place_holder.jpeg"
+                    class="card-img-top"
+                    alt="Litigio Estratégico"
+                  />
+                  <div class="card-body">
+                    <p class="card-text fs-5 mb-0">
+                      El litigio se concibe como una vía para combatir las
+                      desigualdades, atender sus consecuencias y restituir el
+                      daño, así como fortalecer la justicia inclusiva y
+                      establecer precedentes transformadores.
+                    </p>
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
-        </div>
+        </section>
+      </main>
+
+      <footer class="py-4 border-top text-center text-muted">
+        <small>© 360Justicia</small>
+      </footer>
     </div>
-  </section>
-</main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
