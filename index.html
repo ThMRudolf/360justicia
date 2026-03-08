@@ -19,6 +19,9 @@
     data-bs-offset="100"
     tabindex="0"
   >
+    <div class="construction-banner">
+      En construcción
+    </div>
     <div class="container">
       <!-- Top bar: brand + logo -->
       <header class="d-flex justify-content-center align-items-center py-3" style="background-color: #2C282E;">
@@ -135,7 +138,23 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+      <style>
+      .construction-banner {
+      background-color: #ffc107;
+      color: #000;
+      text-align: center;
+      font-weight: 700;
+      padding: 10px 15px;
+      font-size: 1.1rem;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    </style>
   </body>
 </html>
