@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto - 360Justicia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#topNav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <div class="container">
+      <!-- Top bar: brand + logo -->
+      <header class="d-flex justify-content-center align-items-center py-3" style="background-color: #2C282E;">
+        <a
+          class="navbar-brand fs-1 fw-semibold text-decoration-none"
+          href="../index.html"
+        ></a>
+        <img
+          src="../img/360J_Header_Grafito.png"
+          alt="Logo de 360Justicia"
+          style="height: 124px; width: auto"
+        />
+      </header>
+
+      <!-- Menu -->
+      <nav
+        id="topNav"
+        class="navbar navbar-expand-lg navbar-light bg-light rounded mb-4 px-3"
+      >
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="../index.html"
+        >
+          <span class="fw-semibold">Contacto - 360Justicia</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../QuienesSomos/quienes_somos.html"
+                >Quiénes somos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/Litigio_Estrategico.html"
+                >Litigio Estratégico</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/Consultoria.html"
+                >Consultoría</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/Academia.html">Academia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/Cultura.html"
+                >Cultura y Difusión</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://360justicia.blogspot.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../QuienesSomos/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <main>
+        <section id="contacto" class="py-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+              <h2 class="mb-3">Contacto</h2>
+              <p class="text-muted mb-4">
+                Escríbenos y te respondemos lo antes posible.
+              </p>
+
+              <!-- Alerts -->
+              <div id="formOk" class="alert alert-success d-none" role="alert">
+                ¡Gracias! Tu mensaje fue enviado.
+              </div>
+              <div id="formErr" class="alert alert-danger d-none" role="alert">
+                Ups. No se pudo enviar. Intenta de nuevo.
+              </div>
+
+              <!-- Formspree: replace XXXXXXXX -->
+              <form
+                id="contactForm"
+                class="needs-validation"
+                novalidate
+                action="https://formspree.io/f/mvzbnbpo"
+                method="POST"
+              >
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre completo</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre y apellido"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor escribe tu nombre completo.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Por favor escribe un email válido.
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="descripcion" class="form-label"
+                    >Breve descripción</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="descripcion"
+                    name="descripcion"
+                    rows="4"
+                    placeholder="¿En qué te podemos ayudar?"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Por favor escribe una breve descripción.
+                  </div>
+                </div>
+
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nuevo mensaje desde 360Justicia"
+                />
+
+                <button id="sendBtn" type="submit" class="btn btn-primary">
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const form = document.getElementById("contactForm");
+        const ok = document.getElementById("formOk");
+        const err = document.getElementById("formErr");
+        const btn = document.getElementById("sendBtn");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          ok.classList.add("d-none");
+          err.classList.add("d-none");
+
+          // Bootstrap validation UI
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add("was-validated");
+            return;
+          }
+
+          // Send to Formspree without leaving the page
+          btn.disabled = true;
+
+          try {
+            const resp = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { Accept: "application/json" },
+            });
+
+            if (resp.ok) {
+              ok.classList.remove("d-none");
+              form.reset();
+              form.classList.remove("was-validated");
+            } else {
+              err.classList.remove("d-none");
+              const data = await resp.json().catch(() => null);
+              console.log("Formspree error:", resp.status, data);
+            }
+          } catch (e) {
+            err.classList.remove("d-none");
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
