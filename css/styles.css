@@ -1,4 +1,8 @@
-.my_pictures {
+.content-bock {
+  width: 400px;
+}
+
+.my_img {
   width: 10cm;
   height: auto;
   border-radius: 8px;
