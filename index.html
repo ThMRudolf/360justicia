@@ -11,13 +11,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body
     data-bs-spy="scroll"
     data-bs-target="#topNav"
     data-bs-offset="100"
-    tabindex="0"
+    tabindex="0"  
   >
     <div class="construction-banner">
       ¡En construcción!
@@ -105,13 +106,36 @@
         </div>
       </nav>
 
+      <!--Carusell-->
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/carousel1.jpg" class="d-block w-100 my_pictures" alt="carousel3">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel2.jpg" class="d-block w-100 my_pictures" alt="carousel3">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/carousel3.jpg" class="d-block w-100 my_pictures" alt="carousel3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       <!-- Content -->
       <main>
         <section id="quienes-somos" class="py-5">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
               <img
-                src="https://thmrudolf.github.io/360justicia/img/place_holder_socios.jpeg"
+                src="../img/socios_abajo.jpeg"
                 alt="Alfonso García Castillo, Geraldina González de la Vega Hernández y René González de la Vega"
                 class="float-start me-3 mb-2"
                 style="width: 160px; height: auto; border-radius: 8px"
