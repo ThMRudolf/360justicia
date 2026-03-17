@@ -44,6 +44,7 @@ label {
 h1 {
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 24px;
+  text-align: left;
 }
 
 h2,
@@ -54,6 +55,7 @@ h6 {
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 24px;
   font-weight: bold;
+  text-align: left;
 }
 
 
