@@ -11,11 +11,13 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <div class="container">
       <!-- Top bar: brand + logo -->
+      <!--
       <header
         class="d-flex justify-content-center align-items-center"
         style="background-color: #2C282E; height: 124px;"
@@ -30,8 +32,11 @@
           alt="Logo de 360Justicia"
           style="height: 100%; width: auto; display: block;"
         />
+      </header>      
+      -->
+      <header class="main-header d-flex justify-content-center align-items-center card-body">
+        <img src="../img/360J_Header_Grafito.png" alt="Logo de 360Justicia" class="header-logo" />
       </header>
-
       <!-- Menu -->
       <nav
         id="topNav"
@@ -100,28 +105,24 @@
       <!-- Content -->
       <main>
         <section id="litigio" class="py-5">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <h1 class="mb-4">Litigio Estratégico</h1>
-
-              <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="col-12">
                 <a
                   href="../services/Litigio_Estrategico.html"
                   class="text-decoration-none text-dark"
                 >
-                  <img
-                    src="../img/litigio.jpeg"
-                    class="card-img-top"
-                    alt="Litigio Estratégico"
-                  />
                   <div class="card-body">
-                    <h1 class="card-title">Defensa estratégica de derechos y soluciones eficaces para conflictos jurídicos</h1>
-                    <p class="card-text fs-5 mb-0" style="text-align: justify;">
+                    <h1 class="card-title display-5 fw-bold">Defensa estratégica de derechos y soluciones eficaces para conflictos jurídicos</h1>
+                                      <img
+                    src="../img/litigio.jpeg"
+                    alt="Litigio Estratégico"
+                    class="float-start me-3 mb-2 mt-4"
+                    style="width: 300px; height: auto; border-radius: 8px"
+                  />
+                    <p class="card-text fs-5 me-3 mb-2 mt-4" style="text-align: justify;">
                       En 360Justicia representamos y asesoramos a nuestros clientes en la defensa estratégica de sus derechos ante autoridades administrativas, tribunales locales y federales. Nuestro enfoque de litigio combina rigor técnico, análisis jurídico profundo y una comprensión clara del contexto institucional en el que se desarrollan los conflictos.
                       Paralelamente, promovemos mecanismos alternativos de solución de controversias, como la mediación y la negociación estructurada, cuando estos ofrecen vías más eficientes y constructivas para resolver disputas, preservar relaciones institucionales y alcanzar soluciones duraderas.
                     </p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>

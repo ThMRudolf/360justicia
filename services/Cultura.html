@@ -11,6 +11,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body
@@ -20,6 +21,7 @@
     tabindex="0"
   >
     <div class="container">
+      <!--
       <header
         class="d-flex justify-content-center align-items-center"
         style="background-color: #2C282E; height: 124px;"
@@ -34,6 +36,11 @@
           alt="Logo de 360Justicia"
           style="height: 100%; width: auto; display: block;"
         />
+      </header>      
+      -->
+
+      <header class="main-header d-flex justify-content-center align-items-center">
+        <img src="../img/360J_Header_Grafito.png" alt="Logo de 360Justicia" class="header-logo" />
       </header>
       <!-- Menu -->
       <nav
@@ -98,26 +105,22 @@
 
       <!-- Content -->
       <main>
-        <section id="cultura" class="py-5">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <h1 class="mb-4">Cultura y Difusión</h1>
-
-              <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="mb-4">
                 <a
                   href="../services/Cultura.html"
                   class="text-decoration-none text-dark"
                 >
-                  <div class="card-body">
-                    <h1 class="card-title">Promover una conversación pública informada sobre derecho, justicia y valores democráticos</h1>
+                <h1 class="card-title">Promover una conversación pública informada sobre derecho, justicia y valores democráticos</h1>
                       <img
                         src="../img/Blog.jpeg"
-                        class="card-img-top"
                         alt="Cultiura y Difusión"
+                        class="float-start me-3 mb-2 mt-4"
+                        style="width: 300px; height: auto; border-radius: 8px"
                       />
-                      <p class="card-text fs-5 mb-0" style="text-align: justify;">
+                      <p class="card-text fs-5 me-3 mb-2 mt-4" style="text-align: justify;">
                         El derecho y la justicia también forman parte de la vida cultural de las sociedades. En 360Justicia impulsamos iniciativas de divulgación que buscan acercar el pensamiento jurídico y filosófico a públicos más amplios, fomentando una conversación informada sobre los principios que sostienen nuestras instituciones.
-                        A través de publicaciones, conferencias, proyectos audiovisuales y espacios de diálogo interdisciplinario, difundimos conocimiento y reflexiones sobre inclusión, no discriminación, tolerancia e igualdad, contribuyendo a una cultura pública más crítica, plural y comprometida con la justicia.
+                        A través de publicaciones, conferencias, proyectos audiovisuales y espacios de diálogo interdisciplinario, difundimos conocimiento y reflexiones sobre inclusión, no discriminación, tolerancia e igualdad, contribuyendo a una culture pública más crítica, plural y comprometida con la justicia.
                       </p>
                       <a
                         class=""
@@ -126,12 +129,9 @@
                         rel="noopener noreferrer"
                         >Blog de divulgación, análisis y estudio de las ideas</a
                       >
-                  </div>
-                </a>
               </div>
             </div>
           </div>
-        </section>
       </main>
 
       <footer class="py-4 border-top text-center text-muted">
