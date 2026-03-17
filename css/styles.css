@@ -19,19 +19,12 @@
   display: block;
 }
 
-/* Grundschrift für fast alles */
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
 /* Damit auch Formularelemente und Buttons die gleiche Schrift nutzen */
 button,
 input,
 textarea,
 select {
-  font-family: Georgia, "Times New Roman", serif; /*"Times New Roman"*/
+  font-family: Georgia, "Times New Roman", serif !important; /*"Times New Roman"*/
   font-size: 14px;
 }
 
@@ -44,11 +37,12 @@ div,
 label {
   font-size: 14px;
   text-align: justify;
+  font-family: Georgia, "Times New Roman", serif  !important;
 }
 
 /* Titel */
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif !important;
   font-size: 24px;
 }
 
@@ -57,15 +51,34 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif !important;
   font-size: 24px;
   font-weight: bold;
 }
 
+
+html, body {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+}
+
+
+
+button,
+input,
+textarea,
+select,
 .card,
 .navbar,
 .btn,
 .form-control {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif !important;
   font-size: 12px;
 }
