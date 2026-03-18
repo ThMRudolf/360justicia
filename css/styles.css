@@ -1,0 +1,86 @@
+.content-bock {
+  width: 400px;
+}
+
+.my_img {
+  width: 10cm;
+  height: auto;
+  border-radius: 8px;
+}
+
+.main-header {
+  background-color: #2C282E;
+  height: 124px;
+}
+
+.header-logo {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Damit auch Formularelemente und Buttons die gleiche Schrift nutzen */
+button,
+input,
+textarea,
+select {
+  font-family: Georgia, "Times New Roman", serif !important; /*"Times New Roman"*/
+  font-size: 14px;
+}
+
+/* Fließtext */
+p,
+li,
+a,
+span,
+div,
+label {
+  font-size: 14px;
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", serif  !important;
+}
+
+/* Titel */
+h1 {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 24px;
+  text-align: left;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+html, body {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+}
+
+
+
+button,
+input,
+textarea,
+select,
+.card,
+.navbar,
+.btn,
+.form-control {
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 12px;
+}

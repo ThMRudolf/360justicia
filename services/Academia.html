@@ -11,6 +11,8 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/styles.css" />
+
   </head>
 
   <body
@@ -21,16 +23,26 @@
   >
     <div class="container">
       <!-- Top bar: brand + logo -->
-      <header class="d-flex justify-content-center align-items-center py-3" style="background-color: #2C282E;">
+      <!--
+      <header
+        class="d-flex justify-content-center align-items-center"
+        style="background-color: #2C282E; height: 124px;"
+      >
         <a
           class="navbar-brand fs-1 fw-semibold text-decoration-none"
           href="index.html"
         ></a>
+
         <img
           src="../img/360J_Header_Grafito.png"
           alt="Logo de 360Justicia"
-          style="height: 124px; width: auto"
+          style="height: 100%; width: auto; display: block;"
         />
+      </header>      
+      -->
+
+      <header class="main-header d-flex justify-content-center align-items-center">
+        <img src="../img/360J_Header_Grafito.png" alt="Logo de 360Justicia" class="header-logo" />
       </header>
       <!-- Menu -->
       <nav
@@ -85,15 +97,6 @@
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://360justicia.blogspot.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Blog</a
-              >
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="../QuienesSomos/contacto.html"
                 >Contacto</a
               >
@@ -106,29 +109,30 @@
       <main>
         <section id="academia" class="py-5">
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <h1 class="mb-4">Academia y Formación</h1>
-
-              <div class="card shadow-sm">
+            <div class="mb-4">
                 <a
                   href="../services/Academia.html"
                   class="text-decoration-none text-dark"
                 >
-                  <img
-                    src="https://thmrudolf.github.io/360justicia/img/place_holder.jpeg"
-                    class="card-img-top"
-                    alt="Academia y Formación"
-                  />
                   <div class="card-body">
-                    <h1 class="card-title display-5 fw-bold">Investigación y formación para comprender y mejorar las instituciones jurídicas</h1>
-
-                    <p class="card-text fs-5 mb-0">
-                      La reflexión académica constituye uno de los pilares de 360Justicia. A través de investigación, docencia y desarrollo de programas especializados, contribuimos al análisis contemporáneo del derecho, la justicia y las instituciones democráticas.
-                      Una parte central de nuestro trabajo académico se enfoca en la investigación y el desarrollo teórico y práctico de temas relacionados con la inclusión, la no discriminación, la tolerancia y la igualdad, generando conocimiento riguroso que contribuya al debate jurídico y al fortalecimiento de sociedades más justas.
-                    </p>
+                    <h1 class="card-title display-5 fw-bold">Investigación y formación para comprender y mejorar las instituciones jurídicas</h1>                    
+                    <div class="row align-items-start g-3">
+                      <div class="col-12 col-md-3">
+                        <img
+                          src="../img/academia.jpeg"
+                          alt="Academia y Formación"
+                          class="float-start me-3 mb-2 mt-4"
+                        style="width: 300px; height: auto; border-radius: 8px"
+                        />
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <p class="card-text fs-5 me-3 mb-2 mt-4">
+                          La reflexión académica constituye uno de los pilares de 360Justicia. A través de investigación, docencia y desarrollo de programas especializados, contribuimos al análisis contemporáneo del derecho, la justicia y las instituciones democráticas.
+                          Una parte central de nuestro trabajo académico se enfoca en la investigación y el desarrollo teórico y práctico de temas relacionados con la inclusión, la no discriminación, la tolerancia y la igualdad, generando conocimiento riguroso que contribuya al debate jurídico y al fortalecimiento de sociedades más justas.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </a>
-              </div>
             </div>
           </div>
         </section>
