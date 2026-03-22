@@ -106,3 +106,8 @@ select,
   font-family: Georgia, "Times New Roman", serif !important;
   font-size: 12px;
 }
+
+.carousel-img {
+  width: 60%;
+  height: auto;
+}
