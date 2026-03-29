@@ -13,7 +13,6 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../js/app.js"></script>
   </head>
 
   <body
@@ -93,7 +92,7 @@
       <main>
         <section id="quienes-somos" class="py-5">
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-7">
               <img
                 src="../img/socios_abajo.jpeg"
                 alt="Alfonso García Castillo, Geraldina González de la Vega Hernández y René González de la Vega"
@@ -146,73 +145,94 @@
                 Asesor), contamos con un amplio grupo de especialistas en todas
                 las áreas a las que nos dedicamos.
               </p>
-              <div class="row g-4 text-center justify-content-center">
 
-                <!-- Alfonso García Castillo -->
-                <div class="col-12 col-md-3">
-                  <div class="card h-100 border-0 shadow-sm team-card" onclick="toggleBio('bio-agc', this)" style="cursor: pointer;">
-                    <div class="card-body">
-                      <img src="../img/AGC.jpeg" alt="Alfonso García Castillo" class="team-img">
-                      <h3 class="card-title h5">Alfonso García Castillo</h3>
-                      <h4 class="card-subtitle h6 text-muted mb-3">Socio Fundador, miembro del Consejo Asesor</h4>
-                      <small class="text-muted bio-hint">Click para leer más ▾</small>
-                    </div>
-                  </div>
-                </div>
-              <!-- Full-width bio panels, outside the row -->
-                <!--<div id="bio-agc" class="bio-panel" style="display: none;">
-                  <p>El Maestro García Castillo es abogado especializado en derechos humanos, con más de veinte años de experiencia en la defensa, promoción y protección de derechos fundamentales desde diversos ámbitos. Ha trabajado para organizaciones de la sociedad civil, como Amnistía Internacional y el Centro de Derechos Humanos Fray Francisco de Vitoria, así como en organismos públicos autónomos e instituciones gubernamentales, entre ellos, la Comisión de Derechos Humanos de la Ciudad de México y el Consejo para Prevenir y Eliminar la Discriminación de la Ciudad de México (COPRED).</p>
-                </div>-->
+              <img
+                src="../img/AGC.jpeg"
+                alt="Alfonso García Castillo"
+                class="float-start me-3 mb-2"
+                style="width: 160px; height: auto; border-radius: 8px"
+              />
 
-                <!-- Geraldina González de la Vega -->
-                <div class="col-12 col-md-3">
-                  <div class="card h-100 border-0 shadow-sm team-card" onclick="toggleBio('bio-ggvh', this)" style="cursor: pointer;">
-                    <div class="card-body">
-                      <img src="../img/GGVH.jpeg" alt="Geraldina González de la Vega" class="team-img">
-                      <h3 class="card-title h5">Geraldina González de la Vega Hernández</h3>
-                      <h4 class="card-subtitle h6 text-muted mb-3">Socia Fundadora, miembra del Consejo Asesor</h4>
-                      <small class="text-muted bio-hint">Click para leer más ▾</small>
-                    </div>
-                  </div>
-                </div>
-                <!--<div id="bio-ggvh" class="bio-panel" style="display: none;">
-                  <p>Geraldina González de la Vega Hernández es socia fundadora y miembra del Consejo Asesor de la organización. Tiene una amplia experiencia en el ámbito de los derechos humanos y ha trabajado en diversas organizaciones dedicadas a la defensa y promoción de estos derechos.</p>
-                </div>-->
+              <h3>Alfonso García Castillo</h3>
+              <h4>Socio Fundador, miembro del Consejo Asesor</h4>
+              <p class="card-text">
+                El Maestro García Castillo es abogado especializado en derechos
+                humanos, con más de veinte años de experiencia en la defensa,
+                promoción y protección de derechos fundamentales desde diversos
+                ámbitos. Ha trabajado para organizaciones de la sociedad civil,
+                como Amnistía Internacional y el Centro de Derechos Humanos Fray
+                Francisco de Vitoria, así como en organismos públicos autónomos
+                e instituciones gubernamentales, entre ellos, la Comisión de
+                Derechos Humanos de la Ciudad de México y el Consejo para
+                Prevenir y Eliminar la Discriminación de la Ciudad de México
+                (COPRED). Su trayectoria le ha permitido conocer de manera
+                profunda de defensa y protección de derechos humanos,
+                especialmente en la
+                atención-a-grupos-en-situación-de-vulnerabilidad-en-los-ámbitos-privado-y-gubernamental.
+              </p>
 
+              <img
+                src="../img/GGVH.jpeg"
+                alt="Geraldina González de la Vega"
+                class="float-start me-3 mb-2"
+                style="width: 160px; height: auto; border-radius: 8px"
+              />
 
-                <!-- René González de la Vega -->
-                <div class="col-12 col-md-3">
-                  <div class="card h-100 border-0 shadow-sm team-card" onclick="toggleBio('bio-rgvh', this)" style="cursor: pointer;">
-                    <div class="card-body">
-                      <img src="../img/RGVH.jpeg" alt="René González de la Vega" class="team-img">
-                      <h3 class="card-title h5">René González de la Vega</h3>
-                      <h4 class="card-subtitle h6 text-muted mb-3">Socio Fundador y Director General</h4>
-                      <small class="text-muted bio-hint">Click para leer más ▾</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--<div id="bio-rgvh" class="bio-panel" style="display: none;">
-                <p>El Dr. González de la Vega es abogado y filósofo con una destacada trayectoria en el ámbito jurídico, académico y gubernamental. Doctor en Filosofía por la Universidad Católica de Lovaina y con maestrías en Teoría y Filosofía del Derecho (Academia Europea de Teoría del Derecho, Bruselas) y en Filosofía del Derecho, Moral y Política (Universidad de Alicante). En el sector público ha ocupado cargos de alta responsabilidad, entre ellos, Director General de la Unidad de Gobierno en la Secretaría de Gobernación y Diplomático en la Embajada de México en los Países Bajos.</p>
-                <p>En su calidad de Director General de 360Justicia, lidera un proyecto de consultoría jurídica orientado a la construcción de instituciones justas, inclusivas y racionalmente fundamentadas.</p>
-              </div>-->
-              </div>
+              <h3>Geraldina González de la Vega Hernández</h3>
+              <h4>Socia Fundadora, miembra del Consejo Asesor</h4>
+              <p class="card-text">
+                La Maestra González de la Vega Hernández es abogada,
+                especialista en derechos humanos, género y no discriminación.
+                Cuenta con más de veinte años de experiencia en el diseño e
+                implementación de políticas públicas, estrategias jurídicas y
+                programas educativos orientados a la igualdad sustantiva. Ha
+                liderado procesos de transformación institucional y social desde
+                el ámbito público y académico, y ha contribuido a avances clave
+                en el reconocimiento de los derechos de las personas LGBTIQ+ y
+                de las mujeres en México y América Latina. En 360 Justicia,
+                impulsa una visión integral que articula litigio estratégico,
+                consultoría, educación y producción de conocimiento para
+                promover una justicia plena, interseccional y democrática. Desde
+                el 2018 es Presidenta del Consejo para Prevenir y Eliminar la
+                Discriminación de la Ciudad de México.
+              </p>
 
-              <!-- Full-width bio panels, outside the row--> 
-              <div class="col-12 col-lg-8"> 
-                <div id="bio-agc" class="bio-panel " style="display: none;">
-                  <p>El Maestro García Castillo es abogado especializado en derechos humanos, con más de veinte años de experiencia en la defensa, promoción y protección de derechos fundamentales desde diversos ámbitos. Ha trabajado para organizaciones de la sociedad civil, como Amnistía Internacional y el Centro de Derechos Humanos Fray Francisco de Vitoria, así como en organismos públicos autónomos e instituciones gubernamentales, entre ellos, la Comisión de Derechos Humanos de la Ciudad de México y el Consejo para Prevenir y Eliminar la Discriminación de la Ciudad de México (COPRED).</p>
-                </div>
+              <img
+                src="../img/RGVH.jpeg"
+                alt="René González de la Vega"
+                class="float-start me-3 mb-2"
+                style="width: 160px; height: auto; border-radius: 8px"
+              />
 
-                <div id="bio-ggvh" class="bio-panel" style="display: none;">
-                  <p>La Maestra González de la Vega Hernández es abogada, especialista en derechos humanos, género y no discriminación. Cuenta con más de veinte años de experiencia en el diseño e implementación de políticas públicas, estrategias jurídicas y programas educativos orientados a la igualdad sustantiva. Ha liderado procesos de transformación institucional y social desde el ámbito público y académico, y ha contribuido a avances clave en el reconocimiento de los derechos de las personas LGBTIQ+ y de las mujeres en México y América Latina. Desde el 2018 es Presidenta del Consejo para Prevenir y Eliminar la Discriminación de la Ciudad de México.</p>
-                </div>
-
-                <div id="bio-rgvh" class="bio-panel" style="display: none;">
-                  <p>El Dr. González de la Vega es abogado y filósofo con una destacada trayectoria en el ámbito jurídico, académico y gubernamental. Doctor en Filosofía por la Universidad Católica de Lovaina y con maestrías en Teoría y Filosofía del Derecho (Academia Europea de Teoría del Derecho, Bruselas) y en Filosofía del Derecho, Moral y Política (Universidad de Alicante). En el sector público ha ocupado cargos de alta responsabilidad, entre ellos, Director General de la Unidad de Gobierno en la Secretaría de Gobernación y Diplomático en la Embajada de México en los Países Bajos.</p>
-                  <p>En su calidad de Director General de 360Justicia, lidera un proyecto de consultoría jurídica orientado a la construcción de instituciones justas, inclusivas y racionalmente fundamentadas.</p>
-                </div>
-              </div>
+              <h3>René González de la Vega</h3>
+              <h4>Socio Fundador y Director General</h4>
+              <p class="card-text">
+                El Dr. González de la Vega es abogado y filósofo con una
+                destacada trayectoria en el ámbito jurídico, académico y
+                gubernamental. Doctor en Filosofía por la Universidad Católica
+                de Lovaina y con maestrías en Teoría y Filosofía del Derecho
+                (Academia Europea de Teoría del Derecho, Bruselas) y en
+                Filosofía del Derecho, Moral y Política (Universidad de
+                Alicante). Su carrera se ha desarrollado en tres ejes
+                complementarios: la gestión pública, la investigación académica
+                y la construcción de instituciones jurídicas innovadoras. En el
+                sector público ha ocupado cargos de alta responsabilidad, entre
+                ellos, Director General de la Unidad de Gobierno en la
+                Secretaría de Gobernación, Director General del Instituto de
+                Estudios Judiciales del Poder Judicial de la Ciudad de México y
+                Diplomático en la Embajada de México en los Países Bajos, desde
+                los cuales ha impulsado políticas de gobernabilidad democrática,
+                formación judicial y vinculación internacional
+              </p>
+              <p class="card-text">
+                En su calidad de Director General de 360Justicia, lidera un
+                proyecto de consultoría jurídica orientado a la construcción de
+                instituciones justas, inclusivas y racionalmente fundamentadas.
+                Bajo su dirección, 360Justicia se ha consolidado como un espacio
+                de reflexión aplicada que integra el pensamiento filosófico, el
+                análisis jurídico y el diseño institucional, con una visión de
+                justicia integral.
+              </p>
             </div>
           </div>
         </section>
@@ -234,5 +254,54 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+      (() => {
+        "use strict";
+
+        const form = document.getElementById("contactForm");
+        const ok = document.getElementById("formOk");
+        const err = document.getElementById("formErr");
+        const btn = document.getElementById("sendBtn");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          ok.classList.add("d-none");
+          err.classList.add("d-none");
+
+          // Bootstrap validation UI
+          if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add("was-validated");
+            return;
+          }
+
+          // Send to Formspree without leaving the page
+          btn.disabled = true;
+
+          try {
+            const resp = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { Accept: "application/json" },
+            });
+
+            if (resp.ok) {
+              ok.classList.remove("d-none");
+              form.reset();
+              form.classList.remove("was-validated");
+            } else {
+              err.classList.remove("d-none");
+              const data = await resp.json().catch(() => null);
+              console.log("Formspree error:", resp.status, data);
+            }
+          } catch (e) {
+            err.classList.remove("d-none");
+          } finally {
+            btn.disabled = false;
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
