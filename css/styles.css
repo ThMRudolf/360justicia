@@ -42,7 +42,7 @@ button,
 input,
 textarea,
 select {
-  font-family:'Lora', Georgia, "Times New Roman", serif !important; /*"Times New Roman"*/
+  font-family:'Lora', "Georgia", "Times New Roman", serif !important; /*"Times New Roman"*/
   font-size: 14px;
 }
 
