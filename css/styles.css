@@ -129,3 +129,20 @@ select,
   width: 60%;
   height: auto;
 }
+.team-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.375rem; /* same as Bootstrap's .rounded */
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+.bio-panel {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #212529;
+  border-radius: 4px;
+  text-align: justify;
+}
