@@ -8,6 +8,24 @@
   border-radius: 8px;
 }
 
+.service-image {
+  float: left; /* or right */
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 2rem 1rem 0;
+}
+
+/* Important: clear the float after the section so it doesn't bleed into the footer */
+.service-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.service-content {
+  overflow: hidden;
+}
+
 .main-header {
   background-color: #2C282E;
   height: 124px;
@@ -24,7 +42,7 @@ button,
 input,
 textarea,
 select {
-  font-family: Georgia, "Times New Roman", serif !important; /*"Times New Roman"*/
+  font-family:'Lora', Georgia, "Times New Roman", serif !important; /*"Times New Roman"*/
   font-size: 14px;
 }
 
@@ -37,7 +55,7 @@ div,
 label {
   /* font-size: 14px; */
   text-align: justify;
-  font-family: Georgia, "Times New Roman", serif  !important;
+  font-family: 'Lora', Georgia, "Times New Roman", serif  !important;
   font-size: 1.25rem;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
@@ -46,7 +64,7 @@ label {
 
 /* Titel */
 h1 {
-  font-family: Georgia, "Times New Roman", serif !important;
+  font-family: 'Lora', Georgia, "Times New Roman", serif !important;
   font-size: 24px;
   text-align: left;
   margin-right: 1rem;
@@ -57,7 +75,7 @@ h1 {
 h2,
 h3
  {
-  font-family: Georgia, "Times New Roman", serif !important;
+  font-family:'Lora', Georgia, "Times New Roman", serif !important;
   font-size: 24px;
   font-weight: bold;
   text-align: left;
@@ -70,7 +88,7 @@ h3
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", serif !important;
+  font-family: 'Lora',Georgia, "Times New Roman", serif !important;
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
@@ -82,7 +100,7 @@ h6 {
 }
 
 html, body {
-  font-family: Georgia, "Times New Roman", serif !important;
+  font-family: 'Lora', Georgia, "Times New Roman", serif !important;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -103,7 +121,7 @@ select,
 .navbar,
 .btn,
 .form-control {
-  font-family: Georgia, "Times New Roman", serif !important;
+  font-family: 'Lora', Georgia, "Times New Roman", serif !important;
   font-size: 12px;
 }
 
